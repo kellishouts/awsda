@@ -63,10 +63,19 @@ section#carousel {
 }
 
 section#carousel article {
+
+  @include mobile {
+    div:last-child {
+      display: none;
+    }
+  }
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+
 
 section#carousel article div:first-child {
   padding-right: 2rem;

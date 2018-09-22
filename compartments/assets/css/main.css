@@ -6740,6 +6740,9 @@ section#carousel article {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    section#carousel article div:last-child {
+      display: none; } }
 
 section#carousel article div:first-child {
   padding-right: 2rem;
