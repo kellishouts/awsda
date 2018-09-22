@@ -1,0 +1,13 @@
+<h1>{{collection.title}}</h1>
+
+<ul>
+{{#each items}}
+  <li style="border: 1px solid #EEEEEE;">
+    <a href="{{slug}}">
+      <h2>{{fields.name}}</h2>
+      <p>{{fields.role}}</p>
+      <p>{{fields.short_description}}</p>
+    </a>
+  </li>
+{{/each}}
+</ul>
