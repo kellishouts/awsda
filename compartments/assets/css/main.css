@@ -6805,6 +6805,7 @@ div#custom-hero {
 
 #hero-tagline {
   color: #d92748;
+  font-weight: normal !important;
   margin-top: 5px; }
 
 #hero-title {
