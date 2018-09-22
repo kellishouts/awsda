@@ -1,0 +1,7 @@
+<h1>{{fields.name}}</h1>
+<p>{{fields.role}}</p>
+<p>{{{fields.body}}}</p>
+
+{{#each fields.photos}}
+  <img src="{{secure_url}}" alt="">
+{{/each}}

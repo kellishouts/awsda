@@ -27,6 +27,7 @@ $primary-invert: $pink-invert;
 */
 
 @import "../node_modules/bulma/bulma";
+@import '../node_modules/bulma-extensions/bulma-carousel/src/sass/index';
 
 div#main-content {
   margin-top: 30px;
@@ -38,4 +39,14 @@ div#main-content {
   width: 100%;
   bottom: 0;
   overflow:hidden;
+}
+section#hero {
+  display: flex;
+  flex-direction: column;
+}
+
+section#filled-button {
+  background-color: #d92748;
+  color: white;
+  padding: 1rem;
 }
