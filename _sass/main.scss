@@ -28,6 +28,7 @@ $primary-invert: $pink-invert;
 
 $body-family: 'Quattrocento Sans', sans-serif;
 $awsda-red: #d92748;
+$body-size: 18px; 
 
 @import "../node_modules/bulma/bulma";
 @import '../node_modules/bulma-extensions/bulma-carousel/src/sass/index';
@@ -139,6 +140,11 @@ blockquote {
 
 div#custom-hero {
   border-top: 4px solid $awsda-red;
+
+  div.container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 
@@ -154,4 +160,19 @@ div#custom-hero {
 nav#custom-nav {
   border-top: 1px solid $grey-light;
   border-bottom: 1px solid $grey-light;
+}
+
+ul.hotlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+ul.hotlinks li {
+  padding-right: 0.5rem;
+}
+
+.content li + li {
+  margin-top: 0;
 }

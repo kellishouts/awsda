@@ -100,7 +100,7 @@ th {
 
 html {
   background-color: white;
-  font-size: 16px;
+  font-size: 18px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -6799,6 +6799,9 @@ blockquote {
 
 div#custom-hero {
   border-top: 4px solid #d92748; }
+  div#custom-hero div.container {
+    padding-left: 3rem;
+    padding-right: 3rem; }
 
 #hero-tagline {
   color: #d92748;
@@ -6810,3 +6813,15 @@ div#custom-hero {
 nav#custom-nav {
   border-top: 1px solid #b5b5b5;
   border-bottom: 1px solid #b5b5b5; }
+
+ul.hotlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0; }
+
+ul.hotlinks li {
+  padding-right: 0.5rem; }
+
+.content li + li {
+  margin-top: 0; }
