@@ -6711,11 +6711,8 @@ div#main-content {
   margin-top: 30px;
   margin-bottom: 70px; }
 
-.fix-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  overflow: hidden; }
+#custom-footer {
+  max-height: 50px; }
 
 section#hero {
   display: flex;
