@@ -6822,6 +6822,7 @@ ul.hotlinks {
   list-style: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0; }
 
 ul.hotlinks li {
