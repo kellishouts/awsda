@@ -2,6 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+
     // Get all "navbar-burger" elements
     var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
