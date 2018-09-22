@@ -1,7 +1,10 @@
-<h1>{{fields.name}}</h1>
-<p>{{fields.role}}</p>
-<p>{{{fields.body}}}</p>
+<h2 class="title">{{fields.name}}</h2>
+<h3>{{fields.role}}</h3>
+<hr>
+<div class="content">
+  {{{fields.body}}}
 
-{{#each fields.photos}}
-  <img src="{{secure_url}}" alt="">
-{{/each}}
+  {{#each fields.photos}}
+    <img src="{{secure_url}}" alt="">
+  {{/each}}
+</div>
