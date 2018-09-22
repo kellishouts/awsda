@@ -6767,6 +6767,14 @@ section#carousel strong, section#donate-module strong {
   color: #d92748;
   color: white; }
 
+div#board-card {
+  margin-bottom: 50px; }
+  div#board-card div.rect-image-wrapper {
+    height: 300px;
+    overflow: hidden; }
+    div#board-card div.rect-image-wrapper img.image {
+      width: 100%; }
+
 #become-member-button {
   color: #d92748; }
 

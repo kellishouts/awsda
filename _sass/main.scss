@@ -105,6 +105,19 @@ section#carousel strong, section#donate-module strong {
   color: white;
 }
 
+div#board-card {
+  margin-bottom: 50px;
+  div.rect-image-wrapper {
+    height: 300px;
+    overflow: hidden;
+
+    img.image {
+      width: 100%;
+    }
+  }
+
+}
+
 #become-member-button {
   color:$awsda-red; 
 }
