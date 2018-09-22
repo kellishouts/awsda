@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{#block 'title'}}American Women’s Self Defense Association{{/block}}</title>
     <link rel="stylesheet" href="/assets/css/main.css">
-    <!--move main css to be reachable in here-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -116,7 +115,27 @@
         {{{ template }}}
       </div>
     </section>
-    <!--move main js to be reachable in here-->
+
+    <footer class="footer fix-footer">
+      <div class="container content has-text-centered">
+        <div class="columns">
+          <div class="column has-text-left">
+            <h5>Newsletter Sign Up</h5>
+            <p>Get the latest in self-defense news!</p>
+          </div>
+          <div class="column">
+            <input class="input is-medium" type="text" placeholder="Name" type="text"/>
+          </div>
+          <div class="column">
+            <input class="input is-medium" type="text" placeholder="Email" type="email" />
+          </div>
+          <div class="column is-one-fifth has-text-left">
+            <a class="button is-medium">Submit</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="/assets/lib/main.js"></script>
   </body>
 </html>
