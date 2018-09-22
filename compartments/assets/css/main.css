@@ -6715,10 +6715,8 @@ div#main-content {
 #custom-footer {
   max-height: 50px; }
 
-section {
-  padding: 4rem 0; }
-
 section#hero {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6726,6 +6724,7 @@ section#hero {
   padding-top: 0; }
 
 section#carousel {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column; }
 
@@ -6741,14 +6740,31 @@ section#carousel article div:first-child {
   flex-direction: column;
   justify-content: center; }
 
-section#donate {
+section#donate-module {
+  padding: 4rem 0;
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+strong {
+  font-size: 1.5rem;
+  color: #d92748; }
 
 .button {
-  background-color: #d92748; }
+  background-color: white;
+  border-color: #d92748;
+  margin: 0; }
+
+.button:hover {
+  background-color: #d92748;
+  border-color: #d92748; }
 
 .button a {
+  color: #d92748; }
+
+.button a:hover {
+  color: #d92748;
   color: white; }
 
 blockquote {
