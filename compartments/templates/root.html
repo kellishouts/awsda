@@ -1,5 +1,47 @@
-<h1>{{fields.header}}</h1>
-<div>{{{fields.body}}}</div>
+<body>
+
+  <section>
+    {{fields.mission}}
+    <div class="link">
+      {{#each fields.member_button}}
+      <a href="{{url}}">{{title}}</a>
+      {{/each}}
+    </div>
+  </section>
+
+  <section>
+
+    <article>
+      {{{fields.carousel_1}}}
+      {{#each fields.image_1}}
+      <div class="image-1">
+        <img src="{{url}}" alt="{{title}}"
+      </div>
+      {{/each}}
+    </article>
+
+    <article>
+      {{{fields.carousel_2}}}
+      {{#each fields.image_2}}
+      <div class="image-2">
+        <img src="{{url}}" alt="{{title}}"
+      </div>
+      {{/each}}
+    </article>
+
+    <article>
+      {{{fields.carousel_3}}}
+      {{#each fields.image_3}}
+      <div class="image-3">
+        <img src="{{url}}" alt="{{title}}"
+      </div>
+      {{/each}}
+    </article>
+
+  </section>
+
+  {{{fields.body}}}
+</body>
 
 {{#content_for 'title'}}
   {{fields.header}}
