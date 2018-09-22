@@ -6530,9 +6530,20 @@ div#main-content {
 
 section#hero {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+section#carousel {
+  display: flex;
   flex-direction: column; }
 
-section#filled-button {
+section#button {
   background-color: #d92748;
   color: white;
   padding: 1rem; }
+
+blockquote {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 3rem 0; }
