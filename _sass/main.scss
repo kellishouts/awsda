@@ -29,5 +29,6 @@ $primary-invert: $pink-invert;
 @import "../node_modules/bulma/bulma";
 
 div#main-content {
-  padding-top: 30px; 
+  margin-top: 30px;
+  margin-bottom: 70px;
 }

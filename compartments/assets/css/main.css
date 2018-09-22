@@ -6525,4 +6525,5 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 div#main-content {
-  padding-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 70px; }
