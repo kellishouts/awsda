@@ -155,3 +155,18 @@ nav#custom-nav {
   border-top: 1px solid $grey-light;
   border-bottom: 1px solid $grey-light;
 }
+
+ul.hotlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+ul.hotlinks li {
+  padding-right: 0.5rem;
+}
+
+.content li + li {
+  margin-top: 0;
+}
