@@ -9,13 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
 
   <section class="hero">
     <div id="custom-hero" class="hero-body">
       <div class="container">
         <div class="columns">
           <div class="column is-one-fifth">
-            <img class="image is-96x96" src="/assets/images/awsda-logo.png">
+            <a href="/"><img class="image is-96x96" src="/assets/images/awsda-logo.png"></a>
           </div>
 
           <div class="column">
@@ -123,7 +132,7 @@
     </nav>
 
 
-    <section>
+    <section style="min-height: 100vh">
       <div id="main-content" class="container">
         {{{ template }}}
       </div>
@@ -132,6 +141,9 @@
     <footer id="custom-footer" class="footer">
       <div class="container content has-text-centered">
         <div class="columns">
+          <div class="column">
+            <div class="fb-like" data-href="https://www.facebook.com/Americanwomensselfdefense/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+          </div>
           <div class="column has-text-right">
             <p>Get the latest in self-defense news! Sign up for our newsletter <a href="/newsletter-signup">here</a></p>
           </div>
@@ -141,7 +153,6 @@
 
     <script type="text/javascript" src="/assets/lib/main.js"></script>
     <script type="text/javascript" src="/assets/lib/bulma-carousel.min.js"></script>
-
 
   <!-- Begin Constant Contact Active Forms -->
     <script> var _ctct_m = "2caba118d9b5bdc27dcd7da5ea55c7c5"; </script>
