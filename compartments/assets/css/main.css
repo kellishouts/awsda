@@ -6527,3 +6527,12 @@ label.panel-block {
 div#main-content {
   margin-top: 30px;
   margin-bottom: 70px; }
+
+section#hero {
+  display: flex;
+  flex-direction: column; }
+
+section#filled-button {
+  background-color: #d92748;
+  color: white;
+  padding: 1rem; }
