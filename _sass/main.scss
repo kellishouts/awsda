@@ -48,3 +48,22 @@ section#filled-button {
   color: white;
   padding: 1rem;
 }
+
+div#custom-hero {
+  border-top: 4px solid #d92748;
+}
+
+
+#hero-tagline {
+  color: #d92748;
+  margin-top: 5px;
+}
+
+#hero-title {
+  margin-bottom: 1rem;
+}
+
+nav#custom-nav {
+  border-top: 1px solid $grey-light;
+  border-bottom: 1px solid $grey-light;
+}
