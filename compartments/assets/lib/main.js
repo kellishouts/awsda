@@ -1,16 +1,8 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
-    //this handles navbar on click
-    // var burger = document.querySelector('.burger');
-    // var nav = document.querySelector('#'+burger.dataset.target);
-    //
-    // burger.addEventListener('click', function(){
-    //     burger.classList.toggle('is-active');
-    //     nav.classList.toggle('is-active');
-    // });
 
-    var dropdown = document.querySelector('.dropdown');
+    var dropdown = document.querySelector('.navbar-link');
     dropdown.addEventListener('click', function (event) {
         event.stopPropagation();
         dropdown.classList.toggle('is-active');
