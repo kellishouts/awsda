@@ -28,7 +28,8 @@ $primary-invert: $pink-invert;
 
 $body-family: 'Quattrocento Sans', sans-serif;
 $awsda-red: #d92748;
-$body-size: 18px; 
+$body-size: 18px;
+$link: $awsda-red;
 
 @import "../node_modules/bulma/bulma";
 @import '../node_modules/bulma-extensions/bulma-carousel/src/sass/index';
