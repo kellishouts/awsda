@@ -6710,7 +6710,8 @@ label.panel-block {
 
 div#main-content {
   margin-top: 30px;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  padding: 0 3rem; }
 
 #custom-footer {
   max-height: 50px; }
