@@ -2,12 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    var dropdown = document.querySelector('.navbar-link');
-    dropdown.addEventListener('click', function (event) {
-        event.stopPropagation();
-        dropdown.classList.toggle('is-active');
-    });
-
     // Get all "navbar-burger" elements
     var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
