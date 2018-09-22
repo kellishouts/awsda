@@ -32,6 +32,7 @@ $awsda-red: #d92748;
 @import "../node_modules/bulma/bulma";
 @import '../node_modules/bulma-extensions/bulma-carousel/src/sass/index';
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+@import 'util';
 
 
 div#main-content {
@@ -86,6 +87,10 @@ section#carousel strong, section#donate-module strong {
   color: $awsda-red;
 }
 
+p.member-desc {
+  margin-top: 15px;
+}
+
 .button {
   background-color: white;
   border-color: $awsda-red;
@@ -111,7 +116,6 @@ div#board-card {
   div.rect-image-wrapper {
     height: 300px;
     overflow: hidden;
-
     img.image {
       width: 100%;
     }

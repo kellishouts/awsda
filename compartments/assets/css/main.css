@@ -6708,6 +6708,13 @@ label.panel-block {
   .hero-carousel.carousel-animate-fade .carousel-item:not(.is-active) {
     opacity: 0; }
 
+.strong-red {
+  font-weight: bold !important;
+  color: #d92748 !important; }
+
+.no-bottom-margin {
+  margin-bottom: 0px !important; }
+
 div#main-content {
   margin-top: 30px;
   margin-bottom: 70px;
@@ -6751,6 +6758,9 @@ section#donate-module {
 section#carousel strong, section#donate-module strong {
   font-size: 1.5rem;
   color: #d92748; }
+
+p.member-desc {
+  margin-top: 15px; }
 
 .button {
   background-color: white;
