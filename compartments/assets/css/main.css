@@ -6746,7 +6746,7 @@ section#donate-module {
   justify-content: center;
   align-items: center; }
 
-strong {
+section#carousel strong, section#donate-module strong {
   font-size: 1.5rem;
   color: #d92748; }
 
