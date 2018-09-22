@@ -6708,6 +6708,13 @@ label.panel-block {
   .hero-carousel.carousel-animate-fade .carousel-item:not(.is-active) {
     opacity: 0; }
 
+.strong-red {
+  font-weight: bold !important;
+  color: #d92748 !important; }
+
+.no-bottom-margin {
+  margin-bottom: 0px !important; }
+
 div#main-content {
   margin-top: 30px;
   margin-bottom: 70px;
@@ -6752,6 +6759,9 @@ section#carousel strong, section#donate-module strong {
   font-size: 1.5rem;
   color: #d92748; }
 
+p.member-desc {
+  margin-top: 15px; }
+
 .button {
   background-color: white;
   border-color: #d92748;
@@ -6767,6 +6777,14 @@ section#carousel strong, section#donate-module strong {
 .button a:hover {
   color: #d92748;
   color: white; }
+
+div#board-card {
+  margin-bottom: 50px; }
+  div#board-card div.rect-image-wrapper {
+    height: 300px;
+    overflow: hidden; }
+    div#board-card div.rect-image-wrapper img.image {
+      width: 100%; }
 
 #become-member-button {
   color: #d92748; }

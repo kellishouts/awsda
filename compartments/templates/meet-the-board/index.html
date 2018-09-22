@@ -1,20 +1,35 @@
 <h2 class="title">{{collection.title}}</h2>
 <div class="content">
-  <ul>
-  {{#each items}}
+    {{#each items}}
     <!-- temporary inline style-->
-    <li style="border: 1px solid #EEEEEE;">
-      <a href="{{slug}}">
-        {{#each fields.photos}}
-          {{#if @first}}
-          <img src="{{secure_url}}" alt="">
-          {{/if}}
-        {{/each}}
-        <h2>{{fields.name}}</h2>
-        <p>{{fields.role}}</p>
-        <p>{{fields.short_description}}</p>
-      </a>
-    </li>
-  {{/each}}
-  </ul>
+
+    <div id="board-card" class="card">
+        <div class="card-content">
+            <div class="columns">
+                <div class="column">
+                    <h2 class="strong-red no-bottom-margin">{{fields.name}}</h2>
+                    <p>{{fields.role}}</p>
+                    <p class="member-desc">{{fields.short_description}}</p>
+                </div>
+
+                <div class="column">
+                    <a href="{{slug}}">
+                        {{#each fields.photos}}
+                        {{#if @first}}
+                        <div class="rect-image-wrapper">
+                            <img class="image" src="{{secure_url}}" alt="">
+                        </div>
+                        {{/if}}
+                        {{/each}}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    {{/each}}
 </div>
