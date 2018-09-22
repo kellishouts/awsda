@@ -26,7 +26,7 @@
     </section>
 
 
-    <nav class="navbar is-primary">
+    <nav class="navbar is-primary" role="navigation" aria-label="dropdown navigation">
       <div class="container">
         <div class="navbar-brand">
         <span class="navbar-burger burger" data-target="navMenu">
@@ -39,14 +39,44 @@
           <div class="navbar-start">
             <a href="/" class="navbar-item is-active">Home</a>
             <a href="/board-members" class="navbar-item">Board Members</a>
-            <a href="/resources" class="navbar-item">Resources</a>
+            <a href="/resources" class="navbar-item has-dropdown is-hoverable">
+
+              <a class="navbar-link">
+                Resources
+              </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  Overview
+                </a>
+                <a class="navbar-item">
+                  Elements
+                </a>
+                <a class="navbar-item">
+                  Components
+                </a>
+              </div>
+
+            </a>
+            <a href="/events" class="navbar-item">Events</a>
+            <a href="/about" class="navbar-item">About</a>
+          </div>
+        </div>
+
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a href="/become" class="navbar-item">Become a Member</a>
           </div>
         </div>
       </div>
     </nav>
 
-    {{{ template }}}
 
+    <section>
+      <div class="container">
+        {{{ template }}}
+      </div>
+    </section>
     <!--move main js to be reachable in here-->
     <script type="text/javascript" src="/assets/lib/main.js"></script>
   </body>
