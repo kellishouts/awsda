@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{#block 'title'}}Airship CMS{{/block}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Montserrat" rel="stylesheet">
+    <style>
+      /* CSS Reset */
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+
+      body {
+        line-height: 1;
+      }
+
+      ol, ul {
+        list-style: none;
+      }
+
+      blockquote, q {
+        quotes: none;
+      }
+
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: "";
+        content: none;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      /* VERTICAL CENTER */
+
+      html{
+        display: flex;
+        height: 100%;
+      }
+
+      body{
+        margin: auto;
+        padding-bottom: 100px;
+      }
+
+      /* STRUCTURE */
+
+      .content{
+        border-radius: 2px;
+        border: 1px solid #D0D7E4;
+        margin: 20px 30px 10px;
+      }
+
+      @media only screen and (min-width: 725px){
+        .content{
+          width: 450px;
+          margin: 20px auto 10px;
+        }
+      }
+
+      .header-block{
+        padding: 5px 20px 15px;
+        border-bottom: 1px solid #D0D7E4;
+        text-align: center;
+      }
+
+      @media only screen and (min-width: 725px){
+        .header-block{
+          padding: 10px 30px 20px;
+        }
+      }
+      
+      .welcome-block{
+        padding: 30px 30px;
+      }
+
+      @media only screen and (min-width: 725px){
+        .welcome-block{
+          padding: 60px 30px;
+        }
+      }
+
+      /* LOGO */
+
+      .svg-logo{
+        width: 200px;
+        height: 46px;
+        display: block;
+        margin: auto;
+      }
+
+      .svg-logo svg{
+        width: 200px;
+        height: 46px;
+      }
+
+      .svg-logo path{
+        fill: #959BA5;
+      }
+
+      h1{
+        font-family: "Montserrat", "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #959BA5;
+        position: relative;
+        display: inline-block;
+      }
+
+      h1:before{
+        content: " ";
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-color: #FFFFFF;
+        border-radius: 2px;
+        border: 1px solid #D0D7E4;
+        transform: translateY(6px) translateX(-9px);
+      }
+
+      h1:after{
+        content: " ";
+        width: 20px;
+        height: 12px;
+        display: block;
+        position: absolute;
+        left: -5px;
+        top: 3px;
+        border-left: 4px solid #73CFD4;
+        border-bottom: 4px solid #73CFD4;
+        transform: rotate(-45deg); 
+      }
+
+      h2{
+        font-family: "Montserrat", "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+        font-size: 15px;
+        line-height: 19px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #959BA5;
+      }
+
+      h2 + p{
+        margin-top: 15px;
+      }
+
+      p{
+        font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+        font-size: 12px;
+        line-height: 19px;
+        font-weight: 300;
+        color: #BEC6D4;
+        text-align: center;
+        font-style: italic;
+        margin: auto;
+        max-width: 350px;
+      }
+
+      .welcome-block p{
+        white-space: pre-line;
+      }
+
+      body.orange-theme p.small,
+      body.grey-theme p.small,
+      body.teal-theme p.small{
+        font-size: 12px;
+        line-height: 14px;
+        font-style: normal;
+        color: #959BA5;
+      }
+
+      a{
+        text-align: center;
+        color: #959BA5;
+        text-decoration: none;
+        border-bottom: 1px dashed #BEC6D4;
+      }
+
+      /* TEAL */
+
+      body.teal-theme p{
+        color: #73CFD4;
+      }
+
+      body.teal-theme a:hover{
+        color: #73CFD4;
+        border-bottom-color: #73CFD4;
+      }
+      
+      /* ORANGE */
+
+      body.orange-theme p{
+        color: #FF921C;
+      }
+
+      body.orange-theme .svg-logo path{
+        fill: #FF921C;
+      }
+
+      body.orange-theme a:hover{
+        color: #FF921C;
+        border-bottom-color: #FF921C;
+      }
+      
+      body.orange-theme h1:after{
+        border-bottom-color: #FF921C;
+        border-left-color: #FF921C;
+      }
+
+      /* GREY */
+
+      body.grey-theme p{
+        color: #BEC6D4;
+      }
+
+      body.grey-theme .svg-logo path{
+        fill: #959BA5;
+      }
+      
+      body.grey-theme h1:after{
+        border-bottom-color: #9ad21c;
+        border-left-color: #9ad21c;
+      }
+
+      body.grey-theme a:hover{
+        color: #9ad21c;
+        border-bottom-color: #9ad21c;
+      }
+
+      /* HELP */
+
+      ul{
+        margin: 0;
+        padding: 0;
+        padding: 0 20px;
+      }
+
+      ul li{
+        font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+        color: #333333;
+        list-style-type: disc;
+        margin-left: 18px;
+      }
+
+    </style>
+  </head>
+  <!-- default content 'teal-theme' will be used if the page or collection template rendered does not provide an alternative for the content_for block-->
+  <body class="{{#block 'color_theme'}}teal-theme{{/block}}">
+    <div class="svg-logo">
+      <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 185.9 40.5" style="enable-background:new 0 0 185.9 40.5;" xml:space="preserve"><g><path d="M101.8,10.3c-2-5.2-7.4-9.4-8.6-9.4h-0.1H93c-1.2,0-6.7,4.2-8.6,9.4c-0.5,1.4,2.1,20.9,2.7,23.8 c0.1,0.4,0.3,0.7,0.6,0.7h3.1c-0.1-1-0.2-2-0.2-2.9c-0.2-2.9-0.5-7.7-0.3-8.2c0.5-1.3,1.9-3,2.9-3l0,0c1,0,2.4,1.7,2.9,3 c0.2,0.5-0.2,6.4-0.7,11.1h3.1c0.3,0,0.6-0.3,0.6-0.7C99.7,31.2,102.4,11.7,101.8,10.3z M96.2,15.3c0,0.3-0.1,0.3-0.3,0.1 c-1-1.3-2.4-2.2-2.8-2.2l0,0l0,0l0,0l0,0c-0.4,0-1.8,1-2.8,2.2c-0.2,0.2-0.2,0.2-0.3-0.1c-0.1-0.8-0.1-2.9,0-3 c0.7-2.1,2.6-3.8,3.1-3.8l0,0l0,0c0.4,0,2.4,1.7,3.1,3.8C96.3,12.4,96.2,14.5,96.2,15.3z" class="ship-right"></path><path d="M81.6,40c-1.1-1-3.5-10.5-3.5-13.1c0-0.8,0.5-1.5,1.1-2.2s3.4-2.9,4.8-3.7c0.5,4.7,1.7,11.7,2,13.3 C85.3,35.8,82.9,39.6,81.6,40z" class="ship-shadow"></path><path d="M104.6,40c1.1-1,3.5-10.5,3.5-13.1c0-0.8-0.5-1.5-1.1-2.2s-3.4-2.9-4.8-3.7c-0.5,4.7-1.7,11.7-2,13.3 C100.9,35.8,103.3,39.6,104.6,40z" class="ship-left"></path><path d="M184.8,5.1c-0.4,0-12,0-14.5,0c-0.2,2.2-3.7,6.6-6,7.9c1.8,0,12.1,0,12.6,0c2.4,0,3.5-0.3,5.3-2.1 s3.1-3.7,3.6-4.8C186.2,5.5,186,5.1,184.8,5.1z" class="wingtips"></path><path d="M167.6,5.1c-0.9,0-49-0.1-52.3,0c-1.8,0-3,0.6-4.1,1.6s-8.4,10-8.4,10.1c-0.1,0.6-0.1,1.5-0.2,2.1 c0,0.5,0.1,0.7,0.6,1.1c0.2,0.2,1.3,0.9,1.7,1.2c2.2-2.4,5-5,6.7-6.5c1.6-1.3,2.9-1.6,6.3-1.6c0.6,0,40.5,0,41.9,0 c2.4,0,3.5-0.3,5.3-2.1s3.1-3.7,3.6-4.8C169,5.5,168.8,5.1,167.6,5.1z" class="wings"></path><path d="M164.5,14.4c-0.4,0-12,0-14.5,0c-0.2,2.2-3.3,6.1-5.6,7.4c1.8,0,12.1,0,12.6,0c2.4,0,3.5-0.3,5.3-2.1 c1.8-1.8,2.7-3.2,3.2-4.4C165.9,14.9,165.7,14.4,164.5,14.4z" class="wingtips"></path><path d="M147.3,14.4c-0.9,0-27.7-0.1-30.9-0.1c-1.8,0-3.2,0.2-4.8,1.6c-1.1,1-5.9,5.6-5.8,5.7c0.6,0.5,2.2,1.6,3.2,3.1 c0.7-0.6,1.3-1.1,2.3-1.8c1.7-1.3,3.5-1.1,6.9-1.1c0.6,0,20.2,0.1,21.7,0.1c2.4,0,3.5-0.3,5.3-2.1c1.8-1.8,2.7-3.2,3.2-4.4 C148.6,14.9,148.4,14.4,147.3,14.4z" class="wings"></path><path d="M144.8,23.2c-0.4,0-12,0-14.5,0c-0.2,2.2-3.3,6.1-5.6,7.4c1.8,0,12.1,0,12.6,0c2.4,0,3.5-0.3,5.3-2.1 c1.8-1.8,2.7-3.2,3.2-4.4C146.2,23.6,146,23.2,144.8,23.2z" class="wingtips"></path><path d="M127.6,23.2c-0.9,0-9.7-0.1-12.9-0.1c-1.8,0-2.7,0.4-3.8,1.3c-0.3,0.3-0.9,0.6-1.5,1.3c0.3,1.2,0,3-0.4,4.8 c0.6,0,9.7,0.1,11.1,0.1c2.4,0,3.5-0.3,5.3-2.1c1.8-1.8,2.7-3.2,3.2-4.4C129,23.6,128.8,23.2,127.6,23.2z" class="wings"></path><path d="M95,24.1c-0.4-1.3-1.6-2.4-1.9-2.4l0,0l0,0c-0.3,0-1.5,1.1-1.9,2.4c-0.1,0.3,0.6,13.9,1.2,16.2 c0.1,0.4,0.5,1.2,0.7,1.2c0.1,0,0.6-0.8,0.7-1.2C94.4,38.4,95.1,24.4,95,24.1z" class="ship-left"></path><path d="M93.1,13.3L93.1,13.3L93.1,13.3c-0.4,0-1.8,0.9-2.8,2.2c-0.2,0.2-0.2,0.2-0.3-0.1c-0.1-0.8-0.1-2.9,0-3 c0.7-2.1,2.6-3.8,3.1-3.8l0,0V1H93c-1.2,0-6.7,4.2-8.6,9.4c-0.5,1.4,2.1,20.9,2.7,23.8c0.1,0.4,0.3,0.7,0.6,0.7h3.1 c-0.1-1-0.2-2-0.2-2.9c-0.2-2.9-0.5-7.7-0.3-8.2c0.5-1.3,1.9-3,2.9-3l0,0L93.1,13.3L93.1,13.3z" class="ship-left"></path><g><path d="M93.1,21.7c-0.3,0-1.5,1.1-1.9,2.4c-0.1,0.3,0.6,13.9,1.2,16.2c0.1,0.4,0.5,1.2,0.7,1.2l0,0L93.1,21.7 L93.1,21.7z" class="ship-shadow"></path></g><path d="M1.4,5.1c0.4,0,12,0,14.5,0c0.2,2.2,3.7,6.6,6,7.9C20,13,9.8,13,9.2,13c-2.4,0-3.5-0.3-5.3-2.1 C2,9.1,0.8,7.2,0.3,6.1C0,5.5,0.2,5.1,1.4,5.1z" class="wingtips"></path><path d="M21.7,14.4c0.4,0,12,0,14.5,0c0.2,2.2,3.3,6.1,5.6,7.4c-1.8,0-12.1,0-12.6,0c-2.4,0-3.5-0.3-5.3-2.1 c-1.8-1.8-2.7-3.2-3.2-4.4C20.3,14.9,20.5,14.4,21.7,14.4z" class="wingtips"></path><path d="M38.9,14.4c0.9,0,27.7-0.1,30.9-0.1c1.8,0,3.2,0.2,4.8,1.6c1.1,1,5.9,5.6,5.8,5.7c-0.6,0.5-2.2,1.6-3.2,3.1 c-0.7-0.6-1.3-1.1-2.3-1.8c-1.7-1.3-3.5-1.1-6.9-1.1c-0.6,0-20.2,0.1-21.7,0.1c-2.4,0-3.5-0.3-5.3-2.1c-1.8-1.8-2.7-3.2-3.2-4.4 C37.6,14.9,37.8,14.4,38.9,14.4z" class="wings"></path><path d="M41.4,23.2c0.4,0,12,0,14.5,0c0.2,2.2,3.3,6.1,5.6,7.4c-1.8,0-12.1,0-12.6,0c-2.4,0-3.5-0.3-5.3-2.1 c-1.8-1.8-2.7-3.2-3.2-4.4C40,23.6,40.2,23.2,41.4,23.2z" class="wingtips"></path><path d="M58.6,23.2c0.9,0,9.7-0.1,12.9-0.1c1.8,0,2.7,0.4,3.8,1.3c0.3,0.3,0.9,0.6,1.5,1.3c-0.3,1.2,0,3,0.4,4.8 c-0.6,0-9.7,0.1-11.1,0.1c-2.4,0-3.5-0.3-5.3-2.1c-1.8-1.8-2.7-3.2-3.2-4.4C57.3,23.6,57.4,23.2,58.6,23.2z" class="wings"></path><path d="M18.6,5.1c0.9,0,49-0.1,52.3,0c1.8,0,3,0.6,4.1,1.6s8.4,10,8.4,10.1c0.1,0.6,0.1,1.5,0.2,2.1 c0,0.5-0.1,0.7-0.6,1.1c-0.2,0.2-1.3,0.9-1.7,1.2c-2.2-2.4-5-5-6.7-6.5C73,13.2,71.8,13,68.4,13c-0.6,0-40.5,0-41.9,0 c-2.4,0-3.5-0.3-5.3-2.1s-3.1-3.7-3.6-4.8C17.2,5.5,17.4,5.1,18.6,5.1z" class="wings"></path></g></svg>
+    </div>
+    {{{ template }}}
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<div class="content">
+  <div class="header-block">
+    <h1>{{fields.header}}</h1>
+  </div>
+  <div class="welcome-block">
+    <h2>{{site_properties.name}}</h2>
+    <p>{{fields.notes}}</p>
+  </div>
+</div>
+<p class="small">
+  Is this your first site? <a href="https://airshipcms.io/documentation/view/install-airship-cli-tools" target="_blank">
+    Get the CLI Tools
+  </a>
+</p>
+
+
+<!-- content blocks carry template content & fields data to the layout -->
+{{#content_for 'title'}}
+  {{fields.header}}
+{{/content_for}}
+
+{{#content_for 'color_theme'}}
+  {{fields.color_theme}}
+{{/content_for}}
