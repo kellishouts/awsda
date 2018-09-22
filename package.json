@@ -49,12 +49,12 @@
   "license": "MIT",
   "name": "bulma-start",
   "scripts": {
-    "css-build": "node-sass _sass/main.scss css/main.css",
+    "css-build": "node-sass _sass/main.scss compartments/assets/css/main.css",
     "css-deploy": "npm run css-build && npm run css-postcss",
     "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
     "css-watch": "npm run css-build -- --watch",
     "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
+    "js-build": "babel _javascript --out-dir compartments/assets/lib",
     "js-watch": "npm run js-build -- --watch",
     "start": "npm run css-watch | npm run js-watch"
   },
