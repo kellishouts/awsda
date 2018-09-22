@@ -1,10 +1,18 @@
-<h2 class="title">{{fields.name}}</h2>
+<h2 class="title no-bottom-margin">{{fields.name}}</h2>
 <h3>{{fields.role}}</h3>
 <hr>
 <div class="content">
-  {{{fields.body}}}
 
-  {{#each fields.photos}}
-    <img src="{{secure_url}}" alt="">
-  {{/each}}
+  <div class="columns">
+    <div class="column">
+      {{{fields.body}}}
+    </div>
+    <div class="column">
+      {{#each fields.photos}}
+      {{#if @first}}
+        <img class="image" src="{{secure_url}}" alt="">
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
 </div>
