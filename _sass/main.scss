@@ -40,11 +40,17 @@ div#main-content {
   bottom: 0;
   overflow:hidden;
 }
+
+section {
+  padding: 4rem 0;
+}
+
 section#hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 0;
 }
 
 section#carousel {
@@ -52,10 +58,31 @@ section#carousel {
   flex-direction: column;
 }
 
-section#button {
+section#carousel article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section#carousel article div:first-child {
+  padding-right: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section#donate {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
   background-color: #d92748;
+}
+
+.button a {
   color: white;
-  padding: 1rem;
 }
 
 blockquote {
