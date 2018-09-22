@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{#block 'title'}}AWSDA{{/block}}</title>
+    <title>{{#block 'title'}}American Women’s Self Defense Association{{/block}}</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <!--move main css to be reachable in here-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-
 
     <section class="hero">
       <div class="hero-body">
@@ -37,7 +36,7 @@
         </div>
         <div id="navMenu" class="navbar-menu">
           <div class="navbar-start">
-            <a href="/" class="navbar-item is-active">Home</a>
+            <a href="/" class="navbar-item">Home</a>
 
             <div class="navbar-item has-dropdown is-hoverable">
 
@@ -46,19 +45,19 @@
               </a>
 
               <div class="navbar-dropdown is-hidden-mobile is-boxed">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/resources/view/instructors">
                   Instructors
                 </a>
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/resources/view/hotlines">
                   Hotlines
                 </a>
-                <a class="navbar-item" href="#">
-                  State Coalition
+                <a class="navbar-item" href="/resources/view/state-coalitions">
+                  State Coalitions
                 </a>
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/resources/view/member-agencies">
                   Member Agencies
                 </a>
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/resources/view/newsletters">
                   Newsletters
                 </a>
               </div>
@@ -67,15 +66,15 @@
 
             <div class="navbar-item has-dropdown is-hoverable">
 
-              <a class="navbar-link" href="/resources">
+              <a class="navbar-link" href="/events/view/events">
                 Events
               </a>
 
               <div class="navbar-dropdown is-hidden-mobile is-boxed">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/events/view/events">
                   Upcoming
                 </a>
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/events/view/past-events">
                   Past
                 </a>
               </div>
@@ -84,18 +83,15 @@
 
             <div class="navbar-item has-dropdown is-hoverable">
 
-              <a class="navbar-link" href="/about">
+              <a class="navbar-link" href="/about/view/about">
                 About
               </a>
 
               <div class="navbar-dropdown is-hidden-mobile is-boxed">
-                <a class="navbar-item" href="#">
-                  Self Defense
+                <a class="navbar-item" href="/about/view/self-defense">
+                  Facts & Statistics
                 </a>
-                <a class="navbar-item" href="#">
-                  Statistics
-                </a>
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/about/view/meet-the-board">
                   Meet the Board
                 </a>
               </div>
@@ -107,7 +103,7 @@
 
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a href="/become" class="navbar-item">Become a Member</a>
+            <a href="/become-a-member" class="navbar-item">Become a Member</a>
             <a href="/donate" class="navbar-item">Donate</a>
           </div>
         </div>
@@ -116,7 +112,7 @@
 
 
     <section>
-      <div class="container">
+      <div id="main-content" class="container">
         {{{ template }}}
       </div>
     </section>

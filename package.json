@@ -58,5 +58,8 @@
     "js-watch": "npm run js-build -- --watch",
     "start": "npm run css-watch | npm run js-watch"
   },
-  "version": "0.0.2"
+  "version": "0.0.2",
+  "dependencies": {
+    "bulma-carousel": "^3.0.0"
+  }
 }
