@@ -27,6 +27,7 @@ $primary-invert: $pink-invert;
 */
 
 $body-family: 'Quattrocento Sans', sans-serif;
+$awsda-red: #d92748;
 
 @import "../node_modules/bulma/bulma";
 @import '../node_modules/bulma-extensions/bulma-carousel/src/sass/index';
@@ -81,27 +82,31 @@ section#donate-module {
 
 strong {
   font-size: 1.5rem;
-  color: #d92748;
+  color: $awsda-red;
 }
 
 .button {
   background-color: white;
-  border-color: #d92748;
+  border-color: $awsda-red;
   margin: 0;
 }
 
 .button:hover {
-  background-color: #d92748;
-  border-color: #d92748;
+  background-color: $awsda-red;
+  border-color: $awsda-red;
 }
 
 .button a {
-  color: #d92748;
+  color: $awsda-red;
 }
 
 .button a:hover {
-  color: #d92748;
+  color: $awsda-red;
   color: white;
+}
+
+#become-member-button {
+  color:$awsda-red; 
 }
 
 blockquote {
@@ -111,12 +116,12 @@ blockquote {
 }
 
 div#custom-hero {
-  border-top: 4px solid #d92748;
+  border-top: 4px solid $awsda-red;
 }
 
 
 #hero-tagline {
-  color: #d92748;
+  color: $awsda-red;
   margin-top: 5px;
 }
 
