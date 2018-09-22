@@ -28,4 +28,6 @@ $primary-invert: $pink-invert;
 
 @import "../node_modules/bulma/bulma";
 
-//html { background-color: $green;}
+div#main-content {
+  padding-top: 30px; 
+}

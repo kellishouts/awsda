@@ -6523,3 +6523,6 @@ label.panel-block {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
+
+div#main-content {
+  padding-top: 30px; }
