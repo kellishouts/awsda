@@ -1,6 +1,12 @@
 <body>
 
   <section>
+    {{#each fields.hero_image}}
+    <div class="hero-image">
+      <img src="{{url}}" alt="{{title}}"
+    </div>
+    {{/each}}
+
     {{fields.mission}}
     <div class="link">
       {{#each fields.member_button}}
@@ -40,7 +46,7 @@
 
   </section>
 
-  {{{fields.body}}}
+
 </body>
 
 {{#content_for 'title'}}
