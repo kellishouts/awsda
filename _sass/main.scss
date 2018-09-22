@@ -26,8 +26,12 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 
+$body-family: 'Quattrocento Sans', sans-serif;
+
 @import "../node_modules/bulma/bulma";
 @import '../node_modules/bulma-extensions/bulma-carousel/src/sass/index';
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+
 
 div#main-content {
   margin-top: 30px;
