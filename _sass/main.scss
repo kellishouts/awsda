@@ -38,11 +38,8 @@ div#main-content {
   max-height: 50px;
 }
 
-section {
-  padding: 4rem 0;
-}
-
 section#hero {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +48,7 @@ section#hero {
 }
 
 section#carousel {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -70,6 +68,7 @@ section#carousel article div:first-child {
 }
 
 section#donate-module {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -6714,10 +6714,8 @@ div#main-content {
 #custom-footer {
   max-height: 50px; }
 
-section {
-  padding: 4rem 0; }
-
 section#hero {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6725,6 +6723,7 @@ section#hero {
   padding-top: 0; }
 
 section#carousel {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column; }
 
@@ -6741,6 +6740,7 @@ section#carousel article div:first-child {
   justify-content: center; }
 
 section#donate-module {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
