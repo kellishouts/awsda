@@ -6805,6 +6805,15 @@ div#custom-hero {
   div#custom-hero div.container {
     padding-left: 3rem;
     padding-right: 3rem; }
+  @media screen and (max-width: 768px) {
+    div#custom-hero {
+      display: none; } }
+
+div#mobile-logo {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    div#mobile-logo {
+      display: block; } }
 
 #hero-tagline {
   color: #d92748;

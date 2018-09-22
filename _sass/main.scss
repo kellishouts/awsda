@@ -155,8 +155,18 @@ div#custom-hero {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
+  @include mobile() {
+    display: none;
+  }
 }
 
+div#mobile-logo {
+  display: none;
+  @include mobile() {
+    display: block;
+  }
+}
 
 #hero-tagline {
   color: $awsda-red;
