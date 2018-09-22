@@ -6770,3 +6770,17 @@ blockquote {
   font-weight: bold;
   font-size: 1.5rem;
   padding: 3rem 0; }
+
+div#custom-hero {
+  border-top: 4px solid #d92748; }
+
+#hero-tagline {
+  color: #d92748;
+  margin-top: 5px; }
+
+#hero-title {
+  margin-bottom: 1rem; }
+
+nav#custom-nav {
+  border-top: 1px solid #b5b5b5;
+  border-bottom: 1px solid #b5b5b5; }
