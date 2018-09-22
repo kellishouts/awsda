@@ -1,5 +1,8 @@
-<h2 class="title">{{fields.subheader}}</h2>
-<div class="content">{{{fields.body}}}</div>
-{{#each fields.photo}}
-  <img src="{{secure_url}}" alt="">
-{{/each}}
+<h2 class="title">{{fields.header}}</h2>
+<div class="content">
+  {{{fields.body}}}
+ 
+  {{#each fields.photo}}
+    <img src="{{secure_url}}" alt="">
+  {{/each}}
+</div>
