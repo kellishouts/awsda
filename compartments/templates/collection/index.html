@@ -1,9 +1,7 @@
 <h1>Collection Page Name</h1>
 
-{{each items}}
-  <a href="{{slug}}">{{permalink}}}</a>
-{{/each}
-
----
-
-{{{help}}}
+<ul>
+{{#each items}}
+  <li><a href="{{slug}}">{{fields.header}}</a></li>
+{{/each}}
+</ul>
