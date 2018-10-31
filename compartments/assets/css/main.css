@@ -6789,6 +6789,11 @@ div#board-card {
     div#board-card div.rect-image-wrapper img.image {
       width: 100%; }
 
+div.fb-column {
+  text-align: center; }
+  div.fb-column h1 {
+    margin-bottom: 40px; }
+
 #become-member-button {
   color: #d92748; }
 
